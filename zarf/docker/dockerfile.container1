@@ -1,0 +1,21 @@
+### START Solution ###
+ENV CGO_ENABLED 0
+
+### END Solution ###
+
+### DO NOT ADD OR EDIT ANYTHING BELOW THIS ###
+
+# Build the service binary. We are doing this last since this will be different
+# every time we run through this process.
+WORKDIR /service/app/services/app8080-api
+RUN go build
+
+# Run the Go Binary in Alpine.
+FROM alpine:3.16
+EXPOSE 8080/tcp
+RUN addgroup -g 1000 -S demouser && \
+    adduser -u 1000 -h /service -G demouser -S demouser
+COPY --from=build_app8080_api --chown=demouser:demouser /service/app/services/app8080-api/app8080-api /service/app8080-api
+WORKDIR /service
+USER demouser
+CMD ["./app8080-api"]
