@@ -1,6 +1,6 @@
 # devsecops-test0-solution
 
-__ATTENTION: DO NOT PUBLISH, PUSH, OR SHARE THIS TEST OR YOUR SOLUTION.__
+__ATTENTION: DO NOT PUBLISH, PUSH, OR SHARE THIS TEST OR YOUR SOLUTION. Zip the solved project folder and email the zip file to HR.__
 
 __Interviewees__: Please solve the following Problems.
 
