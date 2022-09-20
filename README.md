@@ -101,11 +101,11 @@ Upload the containers you've created in Problem 0 and 1 to this Nexus docker rep
 
 - Problem 0
   - Name: `container0`
-  - Tag: Today's date with the format `YYYY-MM-DD`
+  - Tag: `0.1.3`
 
 - Problem 1
   - Name: `container1`
-  - Tag: `0.1.3`
+  - Tag: Today's date with the format `YYYY-MM-DD`
 
 Provide the ___ALL___ Docker commands that solves this problem and a screenshot of the uploaded container image's tag in Nexus.
 
