@@ -72,7 +72,7 @@ Answer the following:
 
 Run Nexus 3:
 
-`sudo docker run --rm -d -p 8081:8081 -p 8089:8089 --name nexus sonatype/nexus3`
+`sudo docker run --rm -d -p 127.0.0.1:8081:8081 -p 127.0.0.1:8089:8089 --name nexus sonatype/nexus3`
 
 Default user is `admin` and the uniquely generated password can be found in the `admin.password` file inside the volume (`/nexus-data/admin.password`).
 
